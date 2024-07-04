@@ -1,0 +1,21 @@
+ul.sub-menu{
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+ul.nav-menu > li:hover > ul.sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+ul.sub-menu > li > a{
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+ul.sub-menu > li > a:hover{
+    background-color: olivedrab;
+    padding-left: 24px;
+}
+ul.sub-menu > li:not(:last-child){
+    border-bottom: 1px rgb(56, 53, 51);
+}
